@@ -102,7 +102,8 @@ The React Router development server alone does not expose the D1 API.
 
 ## Database and rollout
 
-A database named `personality-test-results` was created in the Cloudflare account during implementation.
+A database named `tilik-results` holds the result rows.
+It replaced the earlier `personality-test-results` database during the site rename, while that database still held no tables.
 Its binding is `DB` and its identifier is recorded in `wrangler.jsonc`.
 Creating the database does not deploy this branch or publish result collection.
 The production migration and Worker deployment must be coordinated as one release with the privacy text.

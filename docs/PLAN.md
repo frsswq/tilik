@@ -45,7 +45,7 @@ Wrangler configuration sketch:
 ```jsonc
 {
   "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "personality-test",
+  "name": "tilik",
   "compatibility_date": "2026-10-11",
   "assets": {
     "directory": "./build/client",
@@ -387,7 +387,7 @@ Decision needed: keep the modern baseline, or lower it to reach older Chrome on 
 ## 6. Repository Layout
 
 ```
-personality-test/
+tilik/
   docs/                 Plan, decisions, methodology
   src/
     content/instruments/   Instrument data files (items, facets, norms)

@@ -1,6 +1,6 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "personality-test",
+  "name": "tilik",
   "main": "./worker/index.ts",
   "compatibility_date": "2026-10-11",
   "assets": {
@@ -14,8 +14,8 @@
   "d1_databases": [
     {
       "binding": "DB",
-      "database_name": "personality-test-results",
-      "database_id": "4dd7eea5-f49a-46c1-8e57-c670a019e4a9",
+      "database_name": "tilik-results",
+      "database_id": "8fc1d261-c5c2-478a-83e8-cbea80e0936a",
       "migrations_dir": "migrations",
     },
   ],
