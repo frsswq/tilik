@@ -25,7 +25,7 @@ The site runs on the Cloudflare free plan with no paid services.
 The existing `personal-web` project already claims `farissaifuddin.com` and `www.farissaifuddin.com` as custom domains on a Cloudflare Worker.
 
 The test site must therefore use a separate route.
-Recommended route: `test.farissaifuddin.com`.
+Recommended route: `tilik.farissaifuddin.com`.
 
 Alternative route: `farissaifuddin.com/tests/*` on the same Worker.
 This alternative conflicts with the existing single-page-application fallback, so the subdomain is simpler and safer.
@@ -51,7 +51,7 @@ Wrangler configuration sketch:
     "directory": "./build/client",
     "not_found_handling": "single-page-application",
   },
-  "routes": [{ "pattern": "test.farissaifuddin.com", "custom_domain": true }],
+  "routes": [{ "pattern": "tilik.farissaifuddin.com", "custom_domain": true }],
 }
 ```
 
@@ -759,7 +759,7 @@ Phase 0, foundation. Status: complete.
 Initialize the repository, the React Router project, TypeScript, Tailwind, shadcn, Ultracite, `@shadcn/lint`, and tests.
 Check: build, lint, test, and typecheck all pass.
 The repository now holds the React Router SPA, the shadcn base components, the Ultracite setup, the Vitest setup, the Cloudflare Worker configuration, and one smoke test.
-The site is deployed to `test.farissaifuddin.com` on Cloudflare Workers static assets.
+The site is deployed to `tilik.farissaifuddin.com` on Cloudflare Workers static assets.
 
 Phase 1, data and scoring.
 Define the types and schema, add the IPIP-NEO-120 items and key, add the norm table, and write the scoring functions with tests.
@@ -810,7 +810,7 @@ Bahasa Melayu, if it is wanted:
 
 Decided:
 
-1. Subdomain: `test.farissaifuddin.com`. It is deployed.
+1. Subdomain: `tilik.farissaifuddin.com`. It is deployed. The earlier `test.farissaifuddin.com` host was dropped in the rename.
 2. React Router framework mode with `ssr: false`. Prerender arrives in Phase 5.
 3. shadcn style `base-nova` on Base UI.
 

@@ -11,7 +11,7 @@ See [docs/PLAN.md](docs/PLAN.md) for the full plan.
 
 ## Deployment
 
-The site deploys as Worker static assets, and `wrangler.jsonc` binds `test.farissaifuddin.com`.
+The site deploys as Worker static assets, and `wrangler.jsonc` binds `tilik.farissaifuddin.com`.
 
 Static HTML is published for the content routes: the methodology, licences, and privacy pages, plus each instrument and its item list.
 The home page, the runner, and the result stay client-rendered, so `index.html` remains a content-free shell that Cloudflare can serve for any other path.
