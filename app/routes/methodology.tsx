@@ -116,7 +116,7 @@ const Methodology = () => (
         instrument, is in{" "}
         <a
           className="underline underline-offset-4"
-          href="https://github.com/frsswq/personality-test/blob/main/docs/PLAN.md"
+          href="https://github.com/frsswq/tilik/blob/main/docs/PLAN.md"
           rel="noreferrer"
           target="_blank"
         >

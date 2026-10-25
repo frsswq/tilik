@@ -106,11 +106,11 @@ const Licenses = () => (
         If an attribution is wrong or incomplete, open an issue at{" "}
         <a
           className="underline underline-offset-4"
-          href="https://github.com/frsswq/personality-test/issues"
+          href="https://github.com/frsswq/tilik/issues"
           rel="noreferrer"
           target="_blank"
         >
-          github.com/frsswq/personality-test/issues
+          github.com/frsswq/tilik/issues
         </a>
         . The item text, the scoring key, and the site code are public.
       </p>
