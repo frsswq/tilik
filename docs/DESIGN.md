@@ -36,7 +36,7 @@ The other three are listed from the chosen set and still need a reading pass bef
 
 ## Visual rules
 
-- One accent colour, from the semantic tokens. No raw Tailwind palette in application code.
+- One accent colour, from the semantic tokens. No raw Tailwind palette in application code. The test avatars are the only exception.
 - Hierarchy from type size, weight, and space. Not from borders, shadows, or colour alone.
 - Geist for text, from `@fontsource-variable/geist`. No second family without a reason.
 - The radius scale comes from the shadcn preset. Change it in one place.
@@ -78,3 +78,21 @@ Run `bun run test:e2e` to check the production landing page in a browser.
 2. Look at the page in a browser at desktop and mobile width, in light mode only.
 3. Check for console errors, a horizontal scrollbar, and a stuck sticky element.
 4. Compare the hierarchy against the reference set: one clear headline, one clear action.
+
+## Test avatars
+
+Every test has an avatar.
+This rule has no exceptions.
+
+- The reference set is in `reference/test-icon/`.
+  The folder is local and Git ignores it.
+- Take these properties from the reference set: a flat, simple body shape, two dark eyes in the upper part of the body, and one optional accessory such as glasses, a beret, or a bow tie.
+- `app/components/instrument-avatar.tsx` draws each avatar on a 100 unit grid.
+  To add a shape, an eye style, or an accessory, add it to that file and to `avatarSchema` in `app/lib/instruments/schema.ts`.
+- Each instrument data file declares its avatar in the `avatar` field.
+  The import script for the instrument writes that field, so put the avatar in the script, not only in the JSON file.
+- The schema rejects an instrument without an avatar, so the test run and the build fail.
+- The registry rejects two instruments with the same shape and colour.
+- Show the avatar next to the instrument title on the home page, the instrument page, the runner, and the result page.
+- The avatar colours are the `--avatar-*` tokens in `app/app.css`.
+  They are the only colours outside the plum accent, and only avatars use them.

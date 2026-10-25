@@ -344,6 +344,12 @@ const items = parsed.flatMap((scale) =>
 );
 
 const instrument = {
+  avatar: {
+    accessory: "bow-tie",
+    colour: "violet",
+    eyes: "slant",
+    shape: "hexagon",
+  },
   category: "personality",
   citation:
     "Goldberg, L. R. (1999). A broad-bandwidth, public domain, personality inventory measuring the lower-level facets of several five-factor models. In I. Mervielde, I. Deary, F. De Fruyt, & F. Ostendorf (Eds.), Personality psychology in Europe (Vol. 7, pp. 7-28). Tilburg University Press.",

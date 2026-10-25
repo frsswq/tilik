@@ -1,4 +1,10 @@
 {
+  "avatar": {
+    "accessory": "none",
+    "colour": "blue",
+    "eyes": "slant",
+    "shape": "round"
+  },
   "category": "personality",
   "citation": "Goldberg, L. R. (1992). The development of markers for the Big-Five factor structure. Psychological Assessment, 4(1), 26-42.",
   "description": "A short public-domain inventory that measures the five broad domains of personality with ten items each.",

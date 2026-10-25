@@ -258,6 +258,12 @@ const domains = DOMAIN_IDS.map((domainId) => {
 });
 
 const instrument = {
+  avatar: {
+    accessory: "round-glasses",
+    colour: "teal",
+    eyes: "slant",
+    shape: "square",
+  },
   category: "personality",
   citation:
     "Johnson, J. A. (2014). Measuring thirty facets of the Five Factor Model with a 120-item public domain inventory: Development of the IPIP-NEO-120. Journal of Research in Personality, 51, 78-89.",

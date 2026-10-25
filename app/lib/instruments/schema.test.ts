@@ -130,4 +130,12 @@ describe(parseInstrument, () => {
 
     expect(() => parseInstrument(broken)).toThrow(/Invalid instrument/u);
   });
+
+  it("rejects an instrument without an avatar", () => {
+    const broken = withInstrument((instrument) => {
+      (instrument as unknown as Record<string, unknown>).avatar = undefined;
+    });
+
+    expect(() => parseInstrument(broken)).toThrow(/Invalid instrument/u);
+  });
 });

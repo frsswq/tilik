@@ -1,6 +1,12 @@
 import type { Instrument } from "~/lib/instruments/schema";
 
 const SHARED = {
+  avatar: {
+    accessory: "none" as const,
+    colour: "blue" as const,
+    eyes: "slant" as const,
+    shape: "round" as const,
+  },
   category: "personality",
   citation: "Fixture citation.",
   description: "Fixture description.",

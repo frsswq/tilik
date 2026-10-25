@@ -1,5 +1,6 @@
 import { Link, useNavigate, useParams } from "react-router";
 
+import { InstrumentAvatar } from "~/components/instrument-avatar";
 import { Alert, AlertDescription, AlertTitle } from "~/components/ui/alert";
 import { Button, buttonVariants } from "~/components/ui/button";
 import {
@@ -86,12 +87,15 @@ const TestRunner = ({ instrument }: { instrument: Instrument }) => {
     <main className="mx-auto flex w-full max-w-3xl flex-col gap-6 p-4 py-8">
       <header className="flex flex-col gap-4">
         <h1 className="sr-only">{instrument.title}</h1>
-        <Link
-          className="text-muted-foreground hover:text-foreground text-sm underline underline-offset-4"
-          to={`/tests/${instrument.slug}`}
-        >
-          {instrument.title}
-        </Link>
+        <div className="flex items-center gap-3">
+          <InstrumentAvatar avatar={instrument.avatar} className="size-8" />
+          <Link
+            className="text-muted-foreground hover:text-foreground text-sm underline underline-offset-4"
+            to={`/tests/${instrument.slug}`}
+          >
+            {instrument.title}
+          </Link>
+        </div>
         <Progress aria-label="Answered items" max={total} value={answered}>
           <ProgressLabel>
             Page {page + 1} of {pageCount}

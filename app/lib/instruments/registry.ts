@@ -15,6 +15,22 @@ export const instruments: Instrument[] = Object.entries(modules)
   .map(([source, raw]) => parseInstrument(raw, source))
   .toSorted((left, right) => left.title.localeCompare(right.title));
 
+/**
+ * Two instruments must not look the same, so each shape and colour pair
+ * belongs to one instrument only.
+ */
+const avatarOwners = new Map<string, string>();
+
+for (const { avatar, slug } of instruments) {
+  const key = `${avatar.shape} ${avatar.colour}`;
+  const owner = avatarOwners.get(key);
+
+  if (owner) {
+    throw new Error(`${slug} uses the ${key} avatar, which ${owner} uses`);
+  }
+  avatarOwners.set(key, slug);
+}
+
 export const findInstrument = (slug: string) =>
   instruments.find((instrument) => instrument.slug === slug);
 

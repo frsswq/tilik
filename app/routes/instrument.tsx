@@ -1,5 +1,6 @@
 import { Link, useParams } from "react-router";
 
+import { InstrumentAvatar } from "~/components/instrument-avatar";
 import {
   Accordion,
   AccordionContent,
@@ -84,6 +85,7 @@ const InstrumentPage = ({ instrument }: { instrument: Instrument }) => {
           All tests
         </Link>
         <div className="flex flex-col gap-3">
+          <InstrumentAvatar avatar={instrument.avatar} className="size-16" />
           <h1 className="font-heading text-3xl font-semibold tracking-tight">
             {instrument.title}
           </h1>

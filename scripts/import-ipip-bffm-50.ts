@@ -245,6 +245,12 @@ const domains = FACTOR_IDS.map((factorId) => {
 });
 
 const instrument = {
+  avatar: {
+    accessory: "none",
+    colour: "blue",
+    eyes: "slant",
+    shape: "round",
+  },
   category: "personality",
   citation:
     "Goldberg, L. R. (1992). The development of markers for the Big-Five factor structure. Psychological Assessment, 4(1), 26-42.",

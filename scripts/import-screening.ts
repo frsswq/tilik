@@ -15,6 +15,8 @@
 import { execFileSync } from "node:child_process";
 import { writeFile } from "node:fs/promises";
 
+import type { Avatar } from "../app/lib/instruments/schema";
+
 const CONTENT_DIR = new URL("../app/content/instruments/", import.meta.url)
   .pathname;
 
@@ -30,6 +32,7 @@ interface Band {
 }
 
 interface ScreeningInstrument {
+  avatar: Avatar;
   citation: string;
   description: string;
   id: string;
@@ -65,6 +68,7 @@ const INSTRUCTIONS =
   "Over the last two weeks, how often have you been bothered by each of the following problems? Answer for how you have actually been, not how you would like to be.";
 
 const PHQ9: ScreeningInstrument = {
+  avatar: { accessory: "none", colour: "pink", eyes: "dot", shape: "heart" },
   bands: [
     {
       description:
@@ -170,6 +174,7 @@ const PHQ9: ScreeningInstrument = {
 };
 
 const GAD7: ScreeningInstrument = {
+  avatar: { accessory: "none", colour: "amber", eyes: "dot", shape: "cloud" },
   bands: [
     {
       description:
@@ -302,6 +307,7 @@ const buildInstrument = (source: ScreeningInstrument) => {
   const referenceIds = [...new Set(source.references.map((entry) => entry.id))];
 
   return {
+    avatar: source.avatar,
     category: "screening",
     citation: source.citation,
     description: source.description,

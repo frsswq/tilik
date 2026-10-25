@@ -164,8 +164,55 @@ export const scaleSchema = z
     }
   });
 
+export const AVATAR_SHAPES = [
+  "cloud",
+  "drop",
+  "heart",
+  "hexagon",
+  "pebble",
+  "pill",
+  "round",
+  "square",
+  "triangle",
+] as const;
+
+export const AVATAR_COLOURS = [
+  "amber",
+  "blue",
+  "brown",
+  "lime",
+  "magenta",
+  "orange",
+  "pink",
+  "red",
+  "teal",
+  "violet",
+  "yellow",
+] as const;
+
+/**
+ * Every instrument ships with an avatar in the style of the reference set in
+ * `docs/DESIGN.md`. The field is required, so an instrument without one fails
+ * the test run and the production build.
+ */
+export const avatarSchema = z
+  .object({
+    accessory: z.enum([
+      "beret",
+      "bow-tie",
+      "none",
+      "round-glasses",
+      "sunglasses",
+    ]),
+    colour: z.enum(AVATAR_COLOURS),
+    eyes: z.enum(["dot", "sleepy", "slant"]),
+    shape: z.enum(AVATAR_SHAPES),
+  })
+  .strict();
+
 const instrumentObjectSchema = z
   .object({
+    avatar: avatarSchema,
     category: z.string().min(1),
     citation: z.string().min(1),
     description: z.string().min(1),
@@ -429,6 +476,7 @@ export type Domain = z.infer<typeof domainSchema>;
 export type Evidence = z.infer<typeof evidenceSchema>;
 export type Facet = z.infer<typeof facetSchema>;
 export type Instrument = z.infer<typeof instrumentSchema>;
+export type Avatar = z.infer<typeof avatarSchema>;
 export type InstrumentInfo = z.infer<typeof instrumentInfoSchema>;
 export type Item = z.infer<typeof itemSchema>;
 export type AnswerValue = z.infer<typeof answerValueSchema>;

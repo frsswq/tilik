@@ -1,6 +1,7 @@
 import { ArrowUpRight } from "lucide-react";
 import { Link } from "react-router";
 
+import { InstrumentAvatar } from "~/components/instrument-avatar";
 import {
   Card,
   CardDescription,
@@ -35,6 +36,7 @@ const InstrumentCard = ({ instrument }: { instrument: Instrument }) => {
       <Card>
         <Separator />
         <CardHeader>
+          <InstrumentAvatar avatar={instrument.avatar} />
           <CardTitle>
             <h3>
               <Link
@@ -88,6 +90,14 @@ export const LandingTests = () => {
             <Card>
               <Separator />
               <CardHeader>
+                <div className="flex gap-2">
+                  {screening.map((instrument) => (
+                    <InstrumentAvatar
+                      avatar={instrument.avatar}
+                      key={instrument.slug}
+                    />
+                  ))}
+                </div>
                 <CardTitle>
                   <h3>Anxiety and low mood</h3>
                 </CardTitle>

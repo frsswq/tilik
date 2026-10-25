@@ -1,6 +1,7 @@
 import { useEffect, useMemo } from "react";
 import { Link, useLocation, useNavigate, useParams } from "react-router";
 
+import { InstrumentAvatar } from "~/components/instrument-avatar";
 import { ResultActions } from "~/components/result-actions";
 import { StoredResultActions } from "~/components/stored-result-actions";
 import { Alert, AlertDescription, AlertTitle } from "~/components/ui/alert";
@@ -274,7 +275,10 @@ const Result = ({ instrument }: { instrument: Instrument }) => {
   return (
     <main className="mx-auto flex w-full max-w-3xl flex-col gap-8 p-4 py-10">
       <header className="flex flex-col gap-3">
-        <p className="text-muted-foreground text-sm">{instrument.title}</p>
+        <div className="flex items-center gap-3">
+          <InstrumentAvatar avatar={instrument.avatar} className="size-8" />
+          <p className="text-muted-foreground text-sm">{instrument.title}</p>
+        </div>
         <h1 className="font-heading text-3xl font-semibold tracking-tight">
           Your result
         </h1>
