@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 
-import { requireInstrument } from "~/lib/instruments/registry";
+import { instruments, requireInstrument } from "~/lib/instruments/registry";
 import type { Answers } from "~/lib/scoring/score";
 
 import {
@@ -62,6 +62,10 @@ describe(encodeShare, () => {
     expect(answersCode().length).toBeLessThanOrEqual(80);
   });
 
+  it("keeps the 50-item answer set compact", () => {
+    expect(answersCode(shortInstrument).length).toBeLessThan(60);
+  });
+
   it("keeps a scores-only set short", () => {
     const code = encodeShare(instrument, scoresShare(instrument, facetRaw()));
 
@@ -76,26 +80,13 @@ describe(encodeShare, () => {
 });
 
 describe("answer round trip", () => {
-  it("returns the same answers for a five-point scale", () => {
-    const original = answers();
-    const payload = decode(answersCode());
+  it.each(instruments)("returns the same answers for $title", (target) => {
+    const original = answers(target);
+    const payload = decode(answersCode(target), target);
 
-    expect(payload?.mode).toBe("answers");
-    expect(
-      payload ? answersFromShare(payload, instrument) : null
-    ).toStrictEqual(original);
-  });
-
-  it("uses fewer bits for a four-point scale", () => {
-    const original = answers(shortInstrument);
-    const payload = decode(answersCode(shortInstrument), shortInstrument);
-
-    expect(
-      payload ? answersFromShare(payload, shortInstrument) : null
-    ).toStrictEqual(original);
-
-    // 50 answers at three bits is 19 bytes, and the code stays under 60.
-    expect(answersCode(shortInstrument).length).toBeLessThan(60);
+    expect(payload ? answersFromShare(payload, target) : null).toStrictEqual(
+      original
+    );
   });
 });
 
@@ -109,6 +100,34 @@ describe("score round trip", () => {
 
     expect(payload?.mode).toBe("scores");
     expect(decoded).toStrictEqual(original);
+  });
+
+  it("keeps a thirteen-item scale sum above 63 intact", () => {
+    // The sixteen-factor test has a thirteen-item scale, so its sum reaches 65.
+    // Six bits stop at 63, which would corrupt the top of that scale.
+    const wide = requireInstrument("sixteen-factor-ipip");
+    const topOf = (domainId: string) =>
+      wide.items.filter((item) => item.domainId === domainId).length *
+      wide.scale.max;
+    const original = Object.fromEntries(
+      wide.domains.map((domain) => [domain.id, topOf(domain.id)])
+    );
+    const payload = decode(
+      encodeShare(
+        wide,
+        shareFor(wide, {
+          domains: wide.domains.map((domain) => ({
+            domain,
+            score: { max: topOf(domain.id), min: 10, raw: topOf(domain.id) },
+          })),
+        })
+      ),
+      wide
+    );
+
+    expect(payload ? domainScoresFromShare(payload, wide) : null).toStrictEqual(
+      original
+    );
   });
 
   it("keeps a domain sum above 31 intact", () => {

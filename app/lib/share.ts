@@ -156,9 +156,9 @@ const encode = (
 };
 
 /**
- * Reads a share code. The number of packed values follows from the code length,
- * and the bit width follows from the instrument the caller looked up. Returns
- * `null` when the code is damaged or belongs to another instrument.
+ * Reads exactly the instrument's item or scale count, so byte padding cannot
+ * become extra answers. Returns `null` when the body length is wrong or the
+ * code belongs to another instrument.
  */
 export const decodeShare = (
   code: string,
@@ -200,17 +200,16 @@ export const decodeShare = (
     return null;
   }
 
-  const valueCount = Math.floor(((bytes.length - idEnd) * 8) / bits);
+  const valueCount =
+    mode === "answers"
+      ? instrument.items.length
+      : instrument.facets.length || instrument.domains.length;
 
-  if (valueCount === 0) {
+  if (bytes.length !== idEnd + Math.ceil((valueCount * bits) / 8)) {
     return null;
   }
 
-  const values = unpackValues(
-    bytes.slice(idEnd, idEnd + Math.ceil((valueCount * bits) / 8)),
-    valueCount,
-    bits
-  );
+  const values = unpackValues(bytes.slice(idEnd), valueCount, bits);
 
   return { instrumentId, mode, values };
 };

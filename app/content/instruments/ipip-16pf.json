@@ -1,0 +1,1329 @@
+{
+  "category": "personality",
+  "citation": "Goldberg, L. R. (1999). A broad-bandwidth, public domain, personality inventory measuring the lower-level facets of several five-factor models. In I. Mervielde, I. Deary, F. De Fruyt, & F. Ostendorf (Eds.), Personality psychology in Europe (Vol. 7, pp. 7-28). Tilburg University Press.",
+  "description": "A public-domain inventory with sixteen scales, built from IPIP items that measure constructs similar to the 16 Personality Factor Questionnaire.",
+  "domains": [
+    {
+      "bands": [],
+      "description": "The tendency to feel concern for other people and to show it in how you treat them.",
+      "facetIds": [],
+      "high": "High scorers tend to be attentive, warm, and interested in other people.",
+      "id": "warmth",
+      "low": "Low scorers tend to keep their distance, and to stay formal and reserved with others.",
+      "name": "Warmth"
+    },
+    {
+      "bands": [],
+      "description": "The tendency to reason, to analyse, and to work with ideas.",
+      "facetIds": [],
+      "high": "High scorers tend to think quickly, to analyse problems, and to work well with ideas.",
+      "id": "intellect",
+      "low": "Low scorers tend to prefer the concrete and the familiar over abstract reasoning.",
+      "name": "Intellect"
+    },
+    {
+      "bands": [],
+      "description": "The tendency to stay steady, rather than to swing with mood and stress.",
+      "facetIds": [],
+      "high": "High scorers tend to stay calm, to recover from setbacks, and to keep an even mood.",
+      "id": "emotional-stability",
+      "low": "Low scorers tend to feel their moods move quickly, and to be shaken by setbacks.",
+      "name": "Emotional Stability"
+    },
+    {
+      "bands": [],
+      "description": "The tendency to take charge, to state a position, and to lead.",
+      "facetIds": [],
+      "high": "High scorers tend to lead, to take charge, and to say what they think.",
+      "id": "assertiveness",
+      "low": "Low scorers tend to defer, to follow, and to let others decide.",
+      "name": "Assertiveness"
+    },
+    {
+      "bands": [],
+      "description": "The tendency to seek lively company, amusement, and high spirits.",
+      "facetIds": [],
+      "high": "High scorers tend to be lively, playful, and drawn to a crowd.",
+      "id": "gregariousness",
+      "low": "Low scorers tend to be subdued, quiet, and less drawn to noisy company.",
+      "name": "Gregariousness"
+    },
+    {
+      "bands": [],
+      "description": "The tendency to follow rules, to respect authority, and to keep to a duty.",
+      "facetIds": [],
+      "high": "High scorers tend to follow rules, to respect authority, and to take duties seriously.",
+      "id": "dutifulness",
+      "low": "Low scorers tend to question rules, to resist authority, and to make their own terms.",
+      "name": "Dutifulness"
+    },
+    {
+      "bands": [],
+      "description": "The tendency to approach other people with confidence and to start contact.",
+      "facetIds": [],
+      "high": "High scorers tend to approach people easily, to start conversations, and to enjoy attention.",
+      "id": "friendliness",
+      "low": "Low scorers tend to hold back in unfamiliar company and to stay in the background.",
+      "name": "Friendliness"
+    },
+    {
+      "bands": [],
+      "description": "The tendency to notice feeling and aesthetic qualities, in yourself and in what you read or watch.",
+      "facetIds": [],
+      "high": "High scorers tend to notice feeling and aesthetic detail, and to respond to art and to others.",
+      "id": "sensitivity",
+      "low": "Low scorers tend to stay practical, unsentimental, and unmoved by artistic detail.",
+      "name": "Sensitivity"
+    },
+    {
+      "bands": [],
+      "description": "The tendency to suspect other people and to stay watchful of them.",
+      "facetIds": [],
+      "high": "High scorers tend to be wary, to look for hidden motives, and to hold back trust.",
+      "id": "distrust",
+      "low": "Low scorers tend to trust people, to assume good will, and to take what they say at face value.",
+      "name": "Distrust"
+    },
+    {
+      "bands": [],
+      "description": "The tendency to live in thought, fantasy, and unconventional ideas.",
+      "facetIds": [],
+      "high": "High scorers tend to daydream, to think in images, and to be drawn to the unusual.",
+      "id": "imagination",
+      "low": "Low scorers tend to stay practical, conventional, and grounded in the present.",
+      "name": "Imagination"
+    },
+    {
+      "bands": [],
+      "description": "The tendency to keep your own thoughts and feelings to yourself.",
+      "facetIds": [],
+      "high": "High scorers tend to reveal little about themselves and to keep their feelings private.",
+      "id": "reserve",
+      "low": "Low scorers tend to talk openly about themselves and to show their feelings.",
+      "name": "Reserve"
+    },
+    {
+      "bands": [],
+      "description": "The tendency to worry, to feel threatened, and to hold on to mistakes.",
+      "facetIds": [],
+      "high": "High scorers tend to worry, to feel easily hurt, and to dwell on past mistakes.",
+      "id": "anxiety",
+      "low": "Low scorers tend to feel at ease, to shake off setbacks, and to worry little.",
+      "name": "Anxiety"
+    },
+    {
+      "bands": [],
+      "description": "The tendency to look for new ideas, variety, and a deeper meaning.",
+      "facetIds": [],
+      "high": "High scorers tend to enjoy new ideas, variety, and abstract questions.",
+      "id": "complexity",
+      "low": "Low scorers tend to prefer routine, familiar answers, and practical questions.",
+      "name": "Complexity"
+    },
+    {
+      "bands": [],
+      "description": "The tendency to prefer your own company and to work alone.",
+      "facetIds": [],
+      "high": "High scorers tend to want quiet, to prefer working alone, and to enjoy solitude.",
+      "id": "introversion",
+      "low": "Low scorers tend to seek company, to prefer teamwork, and to enjoy company.",
+      "name": "Introversion"
+    },
+    {
+      "bands": [],
+      "description": "The tendency to order your surroundings and to want things exactly right.",
+      "facetIds": [],
+      "high": "High scorers tend to be neat, exacting, and quick to finish a task properly.",
+      "id": "orderliness",
+      "low": "Low scorers tend to tolerate disorder and to put off tasks that do not hold their interest.",
+      "name": "Orderliness"
+    },
+    {
+      "bands": [],
+      "description": "The tendency to irritation, anger, and impatience with others.",
+      "facetIds": [],
+      "high": "High scorers tend to be quick to irritation, anger, and impatience.",
+      "id": "emotionality",
+      "low": "Low scorers tend to stay even-tempered and to forgive easily.",
+      "name": "Emotionality"
+    }
+  ],
+  "evidence": {
+    "limitations": "These are IPIP scales that resemble the 16PF scales. They are not the 16PF Questionnaire and are not a substitute for it. The scales come from an older factor model, and the IPIP project publishes no population norms, so this site reports raw scores only.",
+    "referenceIds": ["goldberg-1999", "ipip-key", "ipip", "ipip-table"],
+    "reliability": [
+      {
+        "alpha": 0.8,
+        "referenceId": "ipip-key",
+        "sampleN": null,
+        "scale": "warmth"
+      },
+      {
+        "alpha": 0.76,
+        "referenceId": "ipip-key",
+        "sampleN": null,
+        "scale": "intellect"
+      },
+      {
+        "alpha": 0.85,
+        "referenceId": "ipip-key",
+        "sampleN": null,
+        "scale": "emotional-stability"
+      },
+      {
+        "alpha": 0.81,
+        "referenceId": "ipip-key",
+        "sampleN": null,
+        "scale": "assertiveness"
+      },
+      {
+        "alpha": 0.78,
+        "referenceId": "ipip-key",
+        "sampleN": null,
+        "scale": "gregariousness"
+      },
+      {
+        "alpha": 0.84,
+        "referenceId": "ipip-key",
+        "sampleN": null,
+        "scale": "dutifulness"
+      },
+      {
+        "alpha": 0.8,
+        "referenceId": "ipip-key",
+        "sampleN": null,
+        "scale": "friendliness"
+      },
+      {
+        "alpha": 0.73,
+        "referenceId": "ipip-key",
+        "sampleN": null,
+        "scale": "sensitivity"
+      },
+      {
+        "alpha": 0.8,
+        "referenceId": "ipip-key",
+        "sampleN": null,
+        "scale": "distrust"
+      },
+      {
+        "alpha": 0.8,
+        "referenceId": "ipip-key",
+        "sampleN": null,
+        "scale": "imagination"
+      },
+      {
+        "alpha": 0.86,
+        "referenceId": "ipip-key",
+        "sampleN": null,
+        "scale": "reserve"
+      },
+      {
+        "alpha": 0.8,
+        "referenceId": "ipip-key",
+        "sampleN": null,
+        "scale": "anxiety"
+      },
+      {
+        "alpha": 0.82,
+        "referenceId": "ipip-key",
+        "sampleN": null,
+        "scale": "complexity"
+      },
+      {
+        "alpha": 0.73,
+        "referenceId": "ipip-key",
+        "sampleN": null,
+        "scale": "introversion"
+      },
+      {
+        "alpha": 0.81,
+        "referenceId": "ipip-key",
+        "sampleN": null,
+        "scale": "orderliness"
+      },
+      {
+        "alpha": 0.76,
+        "referenceId": "ipip-key",
+        "sampleN": null,
+        "scale": "emotionality"
+      }
+    ],
+    "reported": true,
+    "validity": [
+      {
+        "kind": "convergent",
+        "referenceId": "ipip-table",
+        "summary": "Each IPIP scale correlates with the matching 16PF scale in the Eugene-Springfield community sample."
+      },
+      {
+        "kind": "factor",
+        "referenceId": "goldberg-1999",
+        "summary": "The scales were keyed from an item pool built to cover the lower-level facets of several five-factor models."
+      }
+    ]
+  },
+  "facets": [],
+  "id": "ipip-16pf",
+  "info": {
+    "audience": "Adults who want a detailed look at sixteen traits, rather than a short summary.",
+    "authors": "Lewis R. Goldberg; IPIP contributor John A. Johnson",
+    "durationMinutes": {
+      "max": 15,
+      "min": 10
+    },
+    "notFor": [
+      "A diagnosis.",
+      "A clinical assessment.",
+      "A measure of ability or intelligence.",
+      "A replacement for the commercial 16 Personality Factor Questionnaire.",
+      "A comparison against a population."
+    ],
+    "originalLanguage": "en",
+    "responseScale": "A five-point accuracy scale, from Very Inaccurate to Very Accurate.",
+    "whatYouGet": [
+      "A score for each of the 16 scales.",
+      "A short description of what a high score and a low score mean.",
+      "A link that shares your result and a file that saves it."
+    ],
+    "year": 1999
+  },
+  "instructions": "Describe yourself as you generally are now, not as you wish to be in the future. Describe yourself as you honestly see yourself in relation to other people you know of the same sex as you are, and roughly your same age. There are no right or wrong answers.",
+  "items": [
+    {
+      "domainId": "warmth",
+      "polarity": "positive",
+      "text": "Know how to comfort others.",
+      "id": "warmth-01"
+    },
+    {
+      "domainId": "warmth",
+      "polarity": "positive",
+      "text": "Enjoy bringing people together.",
+      "id": "warmth-02"
+    },
+    {
+      "domainId": "warmth",
+      "polarity": "positive",
+      "text": "Feel others' emotions.",
+      "id": "warmth-03"
+    },
+    {
+      "domainId": "warmth",
+      "polarity": "positive",
+      "text": "Take an interest in other people's lives.",
+      "id": "warmth-04"
+    },
+    {
+      "domainId": "warmth",
+      "polarity": "positive",
+      "text": "Cheer people up.",
+      "id": "warmth-05"
+    },
+    {
+      "domainId": "warmth",
+      "polarity": "positive",
+      "text": "Make people feel at ease.",
+      "id": "warmth-06"
+    },
+    {
+      "domainId": "warmth",
+      "polarity": "positive",
+      "text": "Take time out for others.",
+      "id": "warmth-07"
+    },
+    {
+      "domainId": "warmth",
+      "polarity": "negative",
+      "text": "Don't like to get involved in other people's problems.",
+      "id": "warmth-08"
+    },
+    {
+      "domainId": "warmth",
+      "polarity": "negative",
+      "text": "Am not really interested in others.",
+      "id": "warmth-09"
+    },
+    {
+      "domainId": "warmth",
+      "polarity": "negative",
+      "text": "Try not to think about the needy.",
+      "id": "warmth-10"
+    },
+    {
+      "domainId": "intellect",
+      "polarity": "positive",
+      "text": "Make insightful remarks.",
+      "id": "intellect-01"
+    },
+    {
+      "domainId": "intellect",
+      "polarity": "positive",
+      "text": "Know the answers to many questions.",
+      "id": "intellect-02"
+    },
+    {
+      "domainId": "intellect",
+      "polarity": "positive",
+      "text": "Tend to analyze things.",
+      "id": "intellect-03"
+    },
+    {
+      "domainId": "intellect",
+      "polarity": "positive",
+      "text": "Use my brain.",
+      "id": "intellect-04"
+    },
+    {
+      "domainId": "intellect",
+      "polarity": "positive",
+      "text": "Learn quickly.",
+      "id": "intellect-05"
+    },
+    {
+      "domainId": "intellect",
+      "polarity": "positive",
+      "text": "Counter others' arguments.",
+      "id": "intellect-06"
+    },
+    {
+      "domainId": "intellect",
+      "polarity": "positive",
+      "text": "Reflect on things before acting.",
+      "id": "intellect-07"
+    },
+    {
+      "domainId": "intellect",
+      "polarity": "positive",
+      "text": "Weigh the pros against the cons.",
+      "id": "intellect-08"
+    },
+    {
+      "domainId": "intellect",
+      "polarity": "negative",
+      "text": "Consider myself an average person.",
+      "id": "intellect-09"
+    },
+    {
+      "domainId": "intellect",
+      "polarity": "negative",
+      "text": "Get confused easily.",
+      "id": "intellect-10"
+    },
+    {
+      "domainId": "intellect",
+      "polarity": "negative",
+      "text": "Know that I am not a special person.",
+      "id": "intellect-11"
+    },
+    {
+      "domainId": "intellect",
+      "polarity": "negative",
+      "text": "Have a poor vocabulary.",
+      "id": "intellect-12"
+    },
+    {
+      "domainId": "intellect",
+      "polarity": "negative",
+      "text": "Skip difficult words while reading.",
+      "id": "intellect-13"
+    },
+    {
+      "domainId": "emotional-stability",
+      "polarity": "positive",
+      "text": "Seldom feel blue.",
+      "id": "emotional-stability-01"
+    },
+    {
+      "domainId": "emotional-stability",
+      "polarity": "positive",
+      "text": "Feel comfortable with myself.",
+      "id": "emotional-stability-02"
+    },
+    {
+      "domainId": "emotional-stability",
+      "polarity": "positive",
+      "text": "Readily overcome setbacks.",
+      "id": "emotional-stability-03"
+    },
+    {
+      "domainId": "emotional-stability",
+      "polarity": "positive",
+      "text": "Am relaxed most of the time.",
+      "id": "emotional-stability-04"
+    },
+    {
+      "domainId": "emotional-stability",
+      "polarity": "positive",
+      "text": "Am not easily frustrated.",
+      "id": "emotional-stability-05"
+    },
+    {
+      "domainId": "emotional-stability",
+      "polarity": "negative",
+      "text": "Have frequent mood swings.",
+      "id": "emotional-stability-06"
+    },
+    {
+      "domainId": "emotional-stability",
+      "polarity": "negative",
+      "text": "Often feel blue.",
+      "id": "emotional-stability-07"
+    },
+    {
+      "domainId": "emotional-stability",
+      "polarity": "negative",
+      "text": "Dislike myself.",
+      "id": "emotional-stability-08"
+    },
+    {
+      "domainId": "emotional-stability",
+      "polarity": "negative",
+      "text": "Feel desperate.",
+      "id": "emotional-stability-09"
+    },
+    {
+      "domainId": "emotional-stability",
+      "polarity": "negative",
+      "text": "Am easily discouraged.",
+      "id": "emotional-stability-10"
+    },
+    {
+      "domainId": "assertiveness",
+      "polarity": "positive",
+      "text": "Take charge.",
+      "id": "assertiveness-01"
+    },
+    {
+      "domainId": "assertiveness",
+      "polarity": "positive",
+      "text": "Want to be in charge.",
+      "id": "assertiveness-02"
+    },
+    {
+      "domainId": "assertiveness",
+      "polarity": "positive",
+      "text": "Say what I think.",
+      "id": "assertiveness-03"
+    },
+    {
+      "domainId": "assertiveness",
+      "polarity": "positive",
+      "text": "Am not afraid of providing criticism.",
+      "id": "assertiveness-04"
+    },
+    {
+      "domainId": "assertiveness",
+      "polarity": "positive",
+      "text": "Take control of things.",
+      "id": "assertiveness-05"
+    },
+    {
+      "domainId": "assertiveness",
+      "polarity": "positive",
+      "text": "Can take strong measures.",
+      "id": "assertiveness-06"
+    },
+    {
+      "domainId": "assertiveness",
+      "polarity": "negative",
+      "text": "Wait for others to lead the way.",
+      "id": "assertiveness-07"
+    },
+    {
+      "domainId": "assertiveness",
+      "polarity": "negative",
+      "text": "Never challenge things.",
+      "id": "assertiveness-08"
+    },
+    {
+      "domainId": "assertiveness",
+      "polarity": "negative",
+      "text": "Let others make the decisions.",
+      "id": "assertiveness-09"
+    },
+    {
+      "domainId": "assertiveness",
+      "polarity": "negative",
+      "text": "Let myself be pushed around.",
+      "id": "assertiveness-10"
+    },
+    {
+      "domainId": "gregariousness",
+      "polarity": "positive",
+      "text": "Am the life of the party.",
+      "id": "gregariousness-01"
+    },
+    {
+      "domainId": "gregariousness",
+      "polarity": "positive",
+      "text": "Love large parties.",
+      "id": "gregariousness-02"
+    },
+    {
+      "domainId": "gregariousness",
+      "polarity": "positive",
+      "text": "Joke around a lot.",
+      "id": "gregariousness-03"
+    },
+    {
+      "domainId": "gregariousness",
+      "polarity": "positive",
+      "text": "Enjoy being part of a loud crowd.",
+      "id": "gregariousness-04"
+    },
+    {
+      "domainId": "gregariousness",
+      "polarity": "positive",
+      "text": "Amuse my friends.",
+      "id": "gregariousness-05"
+    },
+    {
+      "domainId": "gregariousness",
+      "polarity": "positive",
+      "text": "Act wild and crazy.",
+      "id": "gregariousness-06"
+    },
+    {
+      "domainId": "gregariousness",
+      "polarity": "negative",
+      "text": "Seldom joke around.",
+      "id": "gregariousness-07"
+    },
+    {
+      "domainId": "gregariousness",
+      "polarity": "negative",
+      "text": "Don't like crowded events.",
+      "id": "gregariousness-08"
+    },
+    {
+      "domainId": "gregariousness",
+      "polarity": "negative",
+      "text": "Am the last to laugh at a joke.",
+      "id": "gregariousness-09"
+    },
+    {
+      "domainId": "gregariousness",
+      "polarity": "negative",
+      "text": "Dislike loud music.",
+      "id": "gregariousness-10"
+    },
+    {
+      "domainId": "dutifulness",
+      "polarity": "positive",
+      "text": "Believe laws should be strictly enforced.",
+      "id": "dutifulness-01"
+    },
+    {
+      "domainId": "dutifulness",
+      "polarity": "positive",
+      "text": "Try to follow the rules.",
+      "id": "dutifulness-02"
+    },
+    {
+      "domainId": "dutifulness",
+      "polarity": "positive",
+      "text": "Believe in one true religion.",
+      "id": "dutifulness-03"
+    },
+    {
+      "domainId": "dutifulness",
+      "polarity": "positive",
+      "text": "Respect authority.",
+      "id": "dutifulness-04"
+    },
+    {
+      "domainId": "dutifulness",
+      "polarity": "positive",
+      "text": "Like to stand during the national anthem.",
+      "id": "dutifulness-05"
+    },
+    {
+      "domainId": "dutifulness",
+      "polarity": "negative",
+      "text": "Resist authority.",
+      "id": "dutifulness-06"
+    },
+    {
+      "domainId": "dutifulness",
+      "polarity": "negative",
+      "text": "Break rules.",
+      "id": "dutifulness-07"
+    },
+    {
+      "domainId": "dutifulness",
+      "polarity": "negative",
+      "text": "Use swear words.",
+      "id": "dutifulness-08"
+    },
+    {
+      "domainId": "dutifulness",
+      "polarity": "negative",
+      "text": "Oppose authority.",
+      "id": "dutifulness-09"
+    },
+    {
+      "domainId": "dutifulness",
+      "polarity": "negative",
+      "text": "Know how to get around the rules.",
+      "id": "dutifulness-10"
+    },
+    {
+      "domainId": "friendliness",
+      "polarity": "positive",
+      "text": "Feel comfortable around people.",
+      "id": "friendliness-01"
+    },
+    {
+      "domainId": "friendliness",
+      "polarity": "positive",
+      "text": "Talk to a lot of different people at parties.",
+      "id": "friendliness-02"
+    },
+    {
+      "domainId": "friendliness",
+      "polarity": "positive",
+      "text": "Don't mind being the center of attention.",
+      "id": "friendliness-03"
+    },
+    {
+      "domainId": "friendliness",
+      "polarity": "positive",
+      "text": "Make friends easily.",
+      "id": "friendliness-04"
+    },
+    {
+      "domainId": "friendliness",
+      "polarity": "positive",
+      "text": "Start conversations.",
+      "id": "friendliness-05"
+    },
+    {
+      "domainId": "friendliness",
+      "polarity": "negative",
+      "text": "Find it difficult to approach others.",
+      "id": "friendliness-06"
+    },
+    {
+      "domainId": "friendliness",
+      "polarity": "negative",
+      "text": "Often feel uncomfortable around others.",
+      "id": "friendliness-07"
+    },
+    {
+      "domainId": "friendliness",
+      "polarity": "negative",
+      "text": "Have little to say.",
+      "id": "friendliness-08"
+    },
+    {
+      "domainId": "friendliness",
+      "polarity": "negative",
+      "text": "Am quiet around strangers.",
+      "id": "friendliness-09"
+    },
+    {
+      "domainId": "friendliness",
+      "polarity": "negative",
+      "text": "Keep in the background.",
+      "id": "friendliness-10"
+    },
+    {
+      "domainId": "sensitivity",
+      "polarity": "positive",
+      "text": "Like to read.",
+      "id": "sensitivity-01"
+    },
+    {
+      "domainId": "sensitivity",
+      "polarity": "positive",
+      "text": "Enjoy discussing movies and books with others.",
+      "id": "sensitivity-02"
+    },
+    {
+      "domainId": "sensitivity",
+      "polarity": "positive",
+      "text": "Read a lot.",
+      "id": "sensitivity-03"
+    },
+    {
+      "domainId": "sensitivity",
+      "polarity": "positive",
+      "text": "Don't like action movies.",
+      "id": "sensitivity-04"
+    },
+    {
+      "domainId": "sensitivity",
+      "polarity": "positive",
+      "text": "Cry during movies.",
+      "id": "sensitivity-05"
+    },
+    {
+      "domainId": "sensitivity",
+      "polarity": "positive",
+      "text": "Love flowers.",
+      "id": "sensitivity-06"
+    },
+    {
+      "domainId": "sensitivity",
+      "polarity": "negative",
+      "text": "Do not enjoy watching dance performances.",
+      "id": "sensitivity-07"
+    },
+    {
+      "domainId": "sensitivity",
+      "polarity": "negative",
+      "text": "Do not like poetry.",
+      "id": "sensitivity-08"
+    },
+    {
+      "domainId": "sensitivity",
+      "polarity": "negative",
+      "text": "Dislike works of fiction.",
+      "id": "sensitivity-09"
+    },
+    {
+      "domainId": "sensitivity",
+      "polarity": "negative",
+      "text": "Rarely notice my emotional reactions.",
+      "id": "sensitivity-10"
+    },
+    {
+      "domainId": "distrust",
+      "polarity": "positive",
+      "text": "Find it hard to forgive others.",
+      "id": "distrust-01"
+    },
+    {
+      "domainId": "distrust",
+      "polarity": "positive",
+      "text": "Suspect hidden motives in others.",
+      "id": "distrust-02"
+    },
+    {
+      "domainId": "distrust",
+      "polarity": "positive",
+      "text": "Am wary of others.",
+      "id": "distrust-03"
+    },
+    {
+      "domainId": "distrust",
+      "polarity": "positive",
+      "text": "Distrust people.",
+      "id": "distrust-04"
+    },
+    {
+      "domainId": "distrust",
+      "polarity": "positive",
+      "text": "Believe that people seldom tell you the whole truth.",
+      "id": "distrust-05"
+    },
+    {
+      "domainId": "distrust",
+      "polarity": "positive",
+      "text": "Believe that people are essentially evil.",
+      "id": "distrust-06"
+    },
+    {
+      "domainId": "distrust",
+      "polarity": "negative",
+      "text": "Trust what people say.",
+      "id": "distrust-07"
+    },
+    {
+      "domainId": "distrust",
+      "polarity": "negative",
+      "text": "Trust others.",
+      "id": "distrust-08"
+    },
+    {
+      "domainId": "distrust",
+      "polarity": "negative",
+      "text": "Believe that others have good intentions.",
+      "id": "distrust-09"
+    },
+    {
+      "domainId": "distrust",
+      "polarity": "negative",
+      "text": "Believe that people are basically moral.",
+      "id": "distrust-10"
+    },
+    {
+      "domainId": "imagination",
+      "polarity": "positive",
+      "text": "Do things that others find strange.",
+      "id": "imagination-01"
+    },
+    {
+      "domainId": "imagination",
+      "polarity": "positive",
+      "text": "Like to get lost in thought.",
+      "id": "imagination-02"
+    },
+    {
+      "domainId": "imagination",
+      "polarity": "positive",
+      "text": "Enjoy wild flights of fantasy.",
+      "id": "imagination-03"
+    },
+    {
+      "domainId": "imagination",
+      "polarity": "positive",
+      "text": "Love to daydream.",
+      "id": "imagination-04"
+    },
+    {
+      "domainId": "imagination",
+      "polarity": "positive",
+      "text": "Swim against the current.",
+      "id": "imagination-05"
+    },
+    {
+      "domainId": "imagination",
+      "polarity": "positive",
+      "text": "Take deviant positions.",
+      "id": "imagination-06"
+    },
+    {
+      "domainId": "imagination",
+      "polarity": "positive",
+      "text": "Do unexpected things.",
+      "id": "imagination-07"
+    },
+    {
+      "domainId": "imagination",
+      "polarity": "negative",
+      "text": "Do things by the book.",
+      "id": "imagination-08"
+    },
+    {
+      "domainId": "imagination",
+      "polarity": "negative",
+      "text": "Seldom daydream.",
+      "id": "imagination-09"
+    },
+    {
+      "domainId": "imagination",
+      "polarity": "negative",
+      "text": "Seldom get lost in thought.",
+      "id": "imagination-10"
+    },
+    {
+      "domainId": "reserve",
+      "polarity": "positive",
+      "text": "Reveal little about myself.",
+      "id": "reserve-01"
+    },
+    {
+      "domainId": "reserve",
+      "polarity": "positive",
+      "text": "Am hard to get to know.",
+      "id": "reserve-02"
+    },
+    {
+      "domainId": "reserve",
+      "polarity": "positive",
+      "text": "Don't talk a lot.",
+      "id": "reserve-03"
+    },
+    {
+      "domainId": "reserve",
+      "polarity": "positive",
+      "text": "Bottle up my feelings.",
+      "id": "reserve-04"
+    },
+    {
+      "domainId": "reserve",
+      "polarity": "positive",
+      "text": "Keep my thoughts to myself.",
+      "id": "reserve-05"
+    },
+    {
+      "domainId": "reserve",
+      "polarity": "negative",
+      "text": "Am open about myself to others.",
+      "id": "reserve-06"
+    },
+    {
+      "domainId": "reserve",
+      "polarity": "negative",
+      "text": "Am open about my feelings.",
+      "id": "reserve-07"
+    },
+    {
+      "domainId": "reserve",
+      "polarity": "negative",
+      "text": "Disclose my intimate thoughts.",
+      "id": "reserve-08"
+    },
+    {
+      "domainId": "reserve",
+      "polarity": "negative",
+      "text": "Show my feelings.",
+      "id": "reserve-09"
+    },
+    {
+      "domainId": "reserve",
+      "polarity": "negative",
+      "text": "Am willing to talk about myself.",
+      "id": "reserve-10"
+    },
+    {
+      "domainId": "anxiety",
+      "polarity": "positive",
+      "text": "Am afraid that I will do the wrong thing.",
+      "id": "anxiety-01"
+    },
+    {
+      "domainId": "anxiety",
+      "polarity": "positive",
+      "text": "Feel threatened easily.",
+      "id": "anxiety-02"
+    },
+    {
+      "domainId": "anxiety",
+      "polarity": "positive",
+      "text": "Am easily hurt.",
+      "id": "anxiety-03"
+    },
+    {
+      "domainId": "anxiety",
+      "polarity": "positive",
+      "text": "Worry about things.",
+      "id": "anxiety-04"
+    },
+    {
+      "domainId": "anxiety",
+      "polarity": "positive",
+      "text": "Spend time thinking about past mistakes.",
+      "id": "anxiety-05"
+    },
+    {
+      "domainId": "anxiety",
+      "polarity": "positive",
+      "text": "Feel guilty when I say \"no.\"",
+      "id": "anxiety-06"
+    },
+    {
+      "domainId": "anxiety",
+      "polarity": "positive",
+      "text": "Feel crushed by setbacks.",
+      "id": "anxiety-07"
+    },
+    {
+      "domainId": "anxiety",
+      "polarity": "negative",
+      "text": "Don't worry about things that have already happened.",
+      "id": "anxiety-08"
+    },
+    {
+      "domainId": "anxiety",
+      "polarity": "negative",
+      "text": "Am not easily bothered by things.",
+      "id": "anxiety-09"
+    },
+    {
+      "domainId": "anxiety",
+      "polarity": "negative",
+      "text": "Don't let others discourage me.",
+      "id": "anxiety-10"
+    },
+    {
+      "domainId": "complexity",
+      "polarity": "positive",
+      "text": "Believe in the importance of art.",
+      "id": "complexity-01"
+    },
+    {
+      "domainId": "complexity",
+      "polarity": "positive",
+      "text": "Love to think up new ways of doing things.",
+      "id": "complexity-02"
+    },
+    {
+      "domainId": "complexity",
+      "polarity": "positive",
+      "text": "Enjoy hearing new ideas.",
+      "id": "complexity-03"
+    },
+    {
+      "domainId": "complexity",
+      "polarity": "positive",
+      "text": "Carry the conversation to a higher level.",
+      "id": "complexity-04"
+    },
+    {
+      "domainId": "complexity",
+      "polarity": "positive",
+      "text": "Prefer variety to routine.",
+      "id": "complexity-05"
+    },
+    {
+      "domainId": "complexity",
+      "polarity": "negative",
+      "text": "Avoid philosophical discussions.",
+      "id": "complexity-06"
+    },
+    {
+      "domainId": "complexity",
+      "polarity": "negative",
+      "text": "Rarely look for a deeper meaning in things.",
+      "id": "complexity-07"
+    },
+    {
+      "domainId": "complexity",
+      "polarity": "negative",
+      "text": "Am not interested in theoretical discussions.",
+      "id": "complexity-08"
+    },
+    {
+      "domainId": "complexity",
+      "polarity": "negative",
+      "text": "Am not interested in abstract ideas.",
+      "id": "complexity-09"
+    },
+    {
+      "domainId": "complexity",
+      "polarity": "negative",
+      "text": "Try to avoid complex people.",
+      "id": "complexity-10"
+    },
+    {
+      "domainId": "introversion",
+      "polarity": "positive",
+      "text": "Want to be left alone.",
+      "id": "introversion-01"
+    },
+    {
+      "domainId": "introversion",
+      "polarity": "positive",
+      "text": "Prefer to do things by myself.",
+      "id": "introversion-02"
+    },
+    {
+      "domainId": "introversion",
+      "polarity": "positive",
+      "text": "Enjoy spending time by myself.",
+      "id": "introversion-03"
+    },
+    {
+      "domainId": "introversion",
+      "polarity": "positive",
+      "text": "Seek quiet.",
+      "id": "introversion-04"
+    },
+    {
+      "domainId": "introversion",
+      "polarity": "positive",
+      "text": "Don't mind eating alone.",
+      "id": "introversion-05"
+    },
+    {
+      "domainId": "introversion",
+      "polarity": "positive",
+      "text": "Enjoy silence.",
+      "id": "introversion-06"
+    },
+    {
+      "domainId": "introversion",
+      "polarity": "positive",
+      "text": "Enjoy my privacy.",
+      "id": "introversion-07"
+    },
+    {
+      "domainId": "introversion",
+      "polarity": "negative",
+      "text": "Enjoy being part of a group.",
+      "id": "introversion-08"
+    },
+    {
+      "domainId": "introversion",
+      "polarity": "negative",
+      "text": "Enjoy teamwork.",
+      "id": "introversion-09"
+    },
+    {
+      "domainId": "introversion",
+      "polarity": "negative",
+      "text": "Can't do without the company of others.",
+      "id": "introversion-10"
+    },
+    {
+      "domainId": "orderliness",
+      "polarity": "positive",
+      "text": "Want everything to be \"just right.\"",
+      "id": "orderliness-01"
+    },
+    {
+      "domainId": "orderliness",
+      "polarity": "positive",
+      "text": "Get chores done right away.",
+      "id": "orderliness-02"
+    },
+    {
+      "domainId": "orderliness",
+      "polarity": "positive",
+      "text": "Like order.",
+      "id": "orderliness-03"
+    },
+    {
+      "domainId": "orderliness",
+      "polarity": "positive",
+      "text": "Continue until everything is perfect.",
+      "id": "orderliness-04"
+    },
+    {
+      "domainId": "orderliness",
+      "polarity": "positive",
+      "text": "Am exacting in my work.",
+      "id": "orderliness-05"
+    },
+    {
+      "domainId": "orderliness",
+      "polarity": "negative",
+      "text": "Am not bothered by messy people.",
+      "id": "orderliness-06"
+    },
+    {
+      "domainId": "orderliness",
+      "polarity": "negative",
+      "text": "Am not bothered by disorder.",
+      "id": "orderliness-07"
+    },
+    {
+      "domainId": "orderliness",
+      "polarity": "negative",
+      "text": "Leave a mess in my room.",
+      "id": "orderliness-08"
+    },
+    {
+      "domainId": "orderliness",
+      "polarity": "negative",
+      "text": "Leave my belongings around.",
+      "id": "orderliness-09"
+    },
+    {
+      "domainId": "orderliness",
+      "polarity": "negative",
+      "text": "Put off unpleasant tasks.",
+      "id": "orderliness-10"
+    },
+    {
+      "domainId": "emotionality",
+      "polarity": "positive",
+      "text": "Get irritated easily.",
+      "id": "emotionality-01"
+    },
+    {
+      "domainId": "emotionality",
+      "polarity": "positive",
+      "text": "Get angry easily.",
+      "id": "emotionality-02"
+    },
+    {
+      "domainId": "emotionality",
+      "polarity": "positive",
+      "text": "Am quick to judge others.",
+      "id": "emotionality-03"
+    },
+    {
+      "domainId": "emotionality",
+      "polarity": "positive",
+      "text": "Am annoyed by others' mistakes.",
+      "id": "emotionality-04"
+    },
+    {
+      "domainId": "emotionality",
+      "polarity": "positive",
+      "text": "Am easily put out.",
+      "id": "emotionality-05"
+    },
+    {
+      "domainId": "emotionality",
+      "polarity": "positive",
+      "text": "Can't stand being contradicted.",
+      "id": "emotionality-06"
+    },
+    {
+      "domainId": "emotionality",
+      "polarity": "positive",
+      "text": "Judge people by their appearance.",
+      "id": "emotionality-07"
+    },
+    {
+      "domainId": "emotionality",
+      "polarity": "negative",
+      "text": "Am not easily annoyed.",
+      "id": "emotionality-08"
+    },
+    {
+      "domainId": "emotionality",
+      "polarity": "negative",
+      "text": "Try to forgive and forget.",
+      "id": "emotionality-09"
+    },
+    {
+      "domainId": "emotionality",
+      "polarity": "negative",
+      "text": "Have a good word for everyone.",
+      "id": "emotionality-10"
+    }
+  ],
+  "license": "Public domain",
+  "licenseNotes": "The IPIP items are in the public domain. Copy, edit, translate, and use them for any purpose without permission and without a fee.",
+  "norms": null,
+  "references": [
+    {
+      "authors": "Goldberg, L. R.",
+      "doi": null,
+      "id": "goldberg-1999",
+      "source": "In I. Mervielde, I. Deary, F. De Fruyt, & F. Ostendorf (Eds.), Personality psychology in Europe (Vol. 7, pp. 7-28). Tilburg University Press",
+      "title": "A broad-bandwidth, public domain, personality inventory measuring the lower-level facets of several five-factor models",
+      "year": 1999
+    },
+    {
+      "authors": "International Personality Item Pool",
+      "doi": null,
+      "id": "ipip-key",
+      "source": "https://ipip.ori.org/new16PFKey.htm",
+      "title": "16PF preliminary IPIP items and scoring key",
+      "year": 2026
+    },
+    {
+      "authors": "International Personality Item Pool",
+      "doi": null,
+      "id": "ipip-table",
+      "source": "https://ipip.ori.org/new16PFTable.htm",
+      "title": "16PF comparison table",
+      "year": 2026
+    },
+    {
+      "authors": "International Personality Item Pool",
+      "doi": null,
+      "id": "ipip",
+      "source": "https://ipip.ori.org/",
+      "title": "IPIP item pool and scales",
+      "year": 2026
+    }
+  ],
+  "reporting": {
+    "mode": "descriptive",
+    "note": "This site reports raw scores. The IPIP project publishes no population norms and advises against canned norms, so no percentile is shown."
+  },
+  "scale": {
+    "id": "accuracy-5",
+    "labels": {
+      "1": "Very Inaccurate",
+      "2": "Moderately Inaccurate",
+      "3": "Neither Accurate Nor Inaccurate",
+      "4": "Moderately Accurate",
+      "5": "Very Accurate"
+    },
+    "max": 5,
+    "min": 1
+  },
+  "slug": "sixteen-factor-ipip",
+  "sourceUrl": "https://ipip.ori.org/new16PFKey.htm",
+  "summary": "163 items across 16 personality scales.",
+  "title": "Sixteen-factor personality test (IPIP)"
+}

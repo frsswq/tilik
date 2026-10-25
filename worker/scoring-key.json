@@ -11,6 +11,32 @@
         "min": 0
       }
     },
+    "ipip-16pf": {
+      "contentHash": "82b1d49d42f1d1ef3801794a8186ffbf4699a73bb6e965ff6b02259cb1e64d44",
+      "itemCounts": {
+        "anxiety": 10,
+        "assertiveness": 10,
+        "complexity": 10,
+        "distrust": 10,
+        "dutifulness": 10,
+        "emotional-stability": 10,
+        "emotionality": 10,
+        "friendliness": 10,
+        "gregariousness": 10,
+        "imagination": 10,
+        "intellect": 13,
+        "introversion": 10,
+        "orderliness": 10,
+        "reserve": 10,
+        "sensitivity": 10,
+        "warmth": 10
+      },
+      "kind": "domain",
+      "scale": {
+        "max": 5,
+        "min": 1
+      }
+    },
     "ipip-bffm-50": {
       "contentHash": "d19393eb32ba22c97e39554597300b6e9faa0b18ea7bc7b60fff4d5dc809a440",
       "itemCounts": {

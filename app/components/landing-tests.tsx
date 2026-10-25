@@ -22,6 +22,10 @@ const personalityCopy: Record<string, { summary: string; title: string }> = {
     summary: "Five broad personality domains and 30 narrower facets.",
     title: "The long version",
   },
+  "sixteen-factor-ipip": {
+    summary: "Sixteen narrower traits, from warmth to tension.",
+    title: "Sixteen sides",
+  },
 };
 
 const InstrumentCard = ({ instrument }: { instrument: Instrument }) => {
