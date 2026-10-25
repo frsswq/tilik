@@ -246,10 +246,10 @@ const domains = FACTOR_IDS.map((factorId) => {
 
 const instrument = {
   avatar: {
-    accessory: "none",
-    colour: "blue",
-    eyes: "slant",
-    shape: "round",
+    colour: "plum",
+    eye: "ring",
+    mark: "none",
+    shape: "dome",
   },
   category: "personality",
   citation:

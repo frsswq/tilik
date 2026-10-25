@@ -84,15 +84,17 @@ Run `bun run test:e2e` to check the production landing page in a browser.
 Every test has an avatar.
 This rule has no exceptions.
 
-- The reference set is in `reference/test-icon/`.
-  The folder is local and Git ignores it.
-- Take these properties from the reference set: a flat, simple body shape, two dark eyes in the upper part of the body, and one optional accessory such as glasses, a beret, or a bow tie.
-- `app/components/instrument-avatar.tsx` draws each avatar on a 100 unit grid.
-  To add a shape, an eye style, or an accessory, add it to that file and to `avatarSchema` in `app/lib/instruments/schema.ts`.
+- Each avatar is a head in profile that looks to the right.
+  The idea comes from the two profiles in the Tilik mark and from the meaning of "tilik": to look closely.
+- An avatar has one body shape, one eye, and one optional mark, such as a brow, a blush, or freckles.
+- Use the reference images in `reference/test-icon/` for mood only: friendly, simple, and flat.
+  Do not copy a shape, a colour value, a face, or an accessory from a reference or from another brand.
+- `app/components/instrument-avatar.tsx` draws each avatar on the same 100 unit grid as the mark.
+  To add a head, an eye, or a mark, add it to that file and to `avatarSchema` in `app/lib/instruments/schema.ts`.
 - Each instrument data file declares its avatar in the `avatar` field.
   The import script for the instrument writes that field, so put the avatar in the script, not only in the JSON file.
 - The schema rejects an instrument without an avatar, so the test run and the build fail.
 - The registry rejects two instruments with the same shape and colour.
 - Show the avatar next to the instrument title on the home page, the instrument page, the runner, and the result page.
 - The avatar colours are the `--avatar-*` tokens in `app/app.css`.
-  They are the only colours outside the plum accent, and only avatars use them.
+  They are muted tones next to the plum accent, and only avatars use them.

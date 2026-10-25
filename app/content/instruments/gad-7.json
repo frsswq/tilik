@@ -1,9 +1,9 @@
 {
   "avatar": {
-    "accessory": "none",
-    "colour": "amber",
-    "eyes": "dot",
-    "shape": "cloud"
+    "colour": "sage",
+    "eye": "closed",
+    "mark": "blush",
+    "shape": "wide"
   },
   "category": "screening",
   "citation": "Spitzer, R. L., Kroenke, K., Williams, J. B. W., & Löwe, B. (2006). A brief measure for assessing generalized anxiety disorder: The GAD-7. Archives of Internal Medicine, 166(10), 1092-1097.",

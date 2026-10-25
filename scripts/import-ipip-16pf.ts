@@ -345,10 +345,10 @@ const items = parsed.flatMap((scale) =>
 
 const instrument = {
   avatar: {
-    accessory: "bow-tie",
-    colour: "violet",
-    eyes: "slant",
-    shape: "hexagon",
+    colour: "ochre",
+    eye: "dot",
+    mark: "freckles",
+    shape: "bun",
   },
   category: "personality",
   citation:

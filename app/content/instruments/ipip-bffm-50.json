@@ -1,9 +1,9 @@
 {
   "avatar": {
-    "accessory": "none",
-    "colour": "blue",
-    "eyes": "slant",
-    "shape": "round"
+    "colour": "plum",
+    "eye": "ring",
+    "mark": "none",
+    "shape": "dome"
   },
   "category": "personality",
   "citation": "Goldberg, L. R. (1992). The development of markers for the Big-Five factor structure. Psychological Assessment, 4(1), 26-42.",

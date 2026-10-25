@@ -83,20 +83,18 @@
   --sidebar-accent-foreground: oklch(0.205 0 0);
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
-  /* Instrument avatar fills. These are the only colours outside the plum
+  /* Instrument avatar fills. They are muted tones that sit next to the plum
      accent, and only the avatars use them. See docs/DESIGN.md. */
-  --avatar-amber: #ff9a00;
-  --avatar-blue: #1084ff;
-  --avatar-brown: #98683f;
-  --avatar-ink: #1b1b1b;
-  --avatar-lime: #a8d920;
-  --avatar-magenta: #d640d6;
-  --avatar-orange: #ff6a00;
-  --avatar-pink: #ff2e9a;
-  --avatar-red: #ff2a3d;
-  --avatar-teal: #00b8a9;
-  --avatar-violet: #9157ff;
-  --avatar-yellow: #f5c000;
+  --avatar-apricot: #e3a06f;
+  --avatar-clay: #b8664c;
+  --avatar-face: #ffffff;
+  --avatar-ink: var(--foreground);
+  --avatar-lavender: #a58bc9;
+  --avatar-ochre: #c9a03e;
+  --avatar-plum: var(--primary);
+  --avatar-rose: #d98197;
+  --avatar-sage: #7fa38a;
+  --avatar-slate: #6f80b0;
 }
 
 @layer base {

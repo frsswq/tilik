@@ -68,7 +68,7 @@ const INSTRUCTIONS =
   "Over the last two weeks, how often have you been bothered by each of the following problems? Answer for how you have actually been, not how you would like to be.";
 
 const PHQ9: ScreeningInstrument = {
-  avatar: { accessory: "none", colour: "pink", eyes: "dot", shape: "heart" },
+  avatar: { colour: "rose", eye: "ring", mark: "blush", shape: "crest" },
   bands: [
     {
       description:
@@ -174,7 +174,7 @@ const PHQ9: ScreeningInstrument = {
 };
 
 const GAD7: ScreeningInstrument = {
-  avatar: { accessory: "none", colour: "amber", eyes: "dot", shape: "cloud" },
+  avatar: { colour: "sage", eye: "closed", mark: "blush", shape: "wide" },
   bands: [
     {
       description:

@@ -259,10 +259,10 @@ const domains = DOMAIN_IDS.map((domainId) => {
 
 const instrument = {
   avatar: {
-    accessory: "round-glasses",
-    colour: "teal",
-    eyes: "slant",
-    shape: "square",
+    colour: "slate",
+    eye: "dot",
+    mark: "brow",
+    shape: "tall",
   },
   category: "personality",
   citation:

@@ -41,8 +41,10 @@ Use lightweight checks that match the changed code before a commit.
   `app/lib/light-mode.test.ts` fails when one reappears.
 - Read `docs/DESIGN.md` before a visual change.
   It holds the reference set and the visual rules.
-- Every test must have an avatar in the style of `reference/test-icon/`.
+- Every test must have an avatar.
   This rule is not negotiable.
+  Avatars are original Tilik art.
+  Never copy a shape, a colour value, a face, or an accessory from a reference image or from another brand.
   A new instrument is not complete until its import script and its data file declare an avatar with a shape and colour pair that no other instrument uses.
   The rules are in `docs/DESIGN.md` section "Test avatars".
 
