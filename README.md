@@ -16,11 +16,6 @@ The site deploys as Worker static assets, and `wrangler.jsonc` binds `tilik.fari
 Static HTML is published for the content routes: the methodology, licences, and privacy pages, plus each instrument and its item list.
 The home page, the runner, and the result stay client-rendered, so `index.html` remains a content-free shell that Cloudflare can serve for any other path.
 
-`wrangler.redirect.jsonc` deploys a small second Worker that sends every request for the old `test.farissaifuddin.com` host to the current address.
-It keeps links shared before the rename working, and it preserves the path, the query, and the fragment.
-Run `bun run deploy:redirect` after a change to that Worker.
-Delete the Worker, its config, and its custom domain when the old links no longer matter.
-
 Cloudflare Web Analytics is switched on from the Cloudflare dashboard, which needs no code change.
 
 ## Stack
@@ -46,7 +41,6 @@ Cloudflare Web Analytics is switched on from the Cloudflare dashboard, which nee
 | `bun run check`                         | Run the lint and format check.               |
 | `bun run fix`                           | Apply lint and format fixes.                 |
 | `bun run deploy`                        | Build and deploy to the Worker.              |
-| `bun run deploy:redirect`               | Deploy the old-host redirect Worker.         |
 
 Use `test:e2e:built` only after a successful build of the current code.
 Playwright starts a preview server for that build without rebuilding it.
