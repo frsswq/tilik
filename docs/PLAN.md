@@ -71,6 +71,9 @@ License review comes before any code.
 | IPIP-NEO-120                                    | 120      | Public domain                     | Yes                 | 5 domains, 30 facets, 4 items per facet. Johnson, 2014.                                                                                              |
 | IPIP Big Five Factor Markers                    | 50       | Public domain                     | Yes                 | Short general-purpose Big Five test.                                                                                                                 |
 | IPIP Big Five Aspect Scales                     | 100      | Public domain                     | Yes                 | Two aspects per domain.                                                                                                                              |
+| IPIP 16PF scales                                | 163      | Public domain                     | Yes                 | 16 scales keyed against Cattell's 16PF factors. Shipped. It is not the 16PF Questionnaire.                                                           |
+| AMBI                                            | 181      | Public domain                     | Later               | Estimates 203 scales from 8 inventories. The scores are approximations, so the result model needs work first.                                        |
+| IPIP-NEO-300                                    | 300      | Public domain                     | Later               | The long NEO form. Low priority, because it overlaps IPIP-NEO-120.                                                                                   |
 | PHQ-9 / GAD-7                                   | 9 / 7    | Public domain                     | Yes                 | Screening tools. Require disclaimers and crisis contacts.                                                                                            |
 | CES-D                                           | 20       | Public domain                     | Yes                 | Depression screener. The source states the document is in the public domain.                                                                         |
 | AUDIT                                           | 10       | Public domain                     | Yes                 | Alcohol screening. World Health Organization instrument, no permission needed.                                                                       |
@@ -171,6 +174,11 @@ Registry gate:
 - IPIP Big Five Factor Markers, 50 items, `PD`.
 - Mini-IPIP, 20 items, `PD`.
 - IPIP Big Five Aspect Scales, 100 items, `PD`.
+- IPIP 16PF scales, 163 items, `PD`. Shipped as `sixteen-factor-ipip`, with 16 scales and no facets.
+  The source page states that the scales measure constructs similar to the 16PF factors, not that the site ships the 16PF Questionnaire.
+- AMBI, 181 items, `PD`. Held back, because it reports approximations of eight other inventories.
+  That needs a result view that says what the score is and what it is not.
+- IPIP-NEO-300, 300 items, `PD`. Held back, because it repeats the 30 facets of IPIP-NEO-120 with more items per facet.
 - Ten-Item Personality Inventory, 10 items, `FA`.
 - Open Extended Jungian Type Scales, `CC`. A four-letter type result.
 - Open Enneagram of Personality Scales, `CC`.
@@ -783,6 +791,8 @@ Cloudflare Web Analytics is switched on from the dashboard with no code change, 
 
 Phase 7, outreach and iteration. Status: in progress.
 Shipped: PHQ-9 and GAD-7 in the screening category, with the published severity bands and the crisis notice.
+Shipped: the IPIP sixteen-factor scales in the personality category, imported from the published items, keying, and alphas.
+The share code now decodes against the instrument's own item or scale count, so a four-point scale round trips.
 Remaining: ICAR and the O*NET Interest Profiler, the well-being, self, stress, and motivation categories, and a saved-reading history view.
 
 Bahasa Melayu, if it is wanted:

@@ -6,7 +6,7 @@ Related: `docs/PLAN.md` sections 5, 9, and 10.
 ## Outcome
 
 A completed local test renders at once and automatically saves derived scores through a same-origin Worker API.
-All four instruments are included, including PHQ-9 and GAD-7.
+The registry holds every shipped instrument, including PHQ-9, GAD-7, and the IPIP sixteen-factor scales.
 The result database holds no name, email address, account, IP address, cookie, user agent, location, or raw answers.
 Scores can still be sensitive personal information.
 This design reduces collected data, but does not guarantee anonymity.
@@ -140,7 +140,8 @@ No application IP tracking or unverified rate-limit guarantee is added here.
 
 ## Verification scope
 
-Focused tests cover the real migration and SQL through SQLite, strict request rejection, immutable retries, expiry, deletion, and score round trips for all four instruments.
+Focused tests cover the real migration and SQL through SQLite, strict request rejection, immutable retries, expiry, deletion, and a score round trip.
+Share payload round trips cover every shipped instrument, and the stored-result API test uses GAD-7.
 Component checks cover the immediate local result, retry, stored links, deletion suppression, and expired-link behavior.
 The new round-trip test first failed for PHQ-9 and GAD-7 because the existing report reconstruction hard-coded a 1-to-5 scale.
 The report builder now uses each instrument's scale bounds.
