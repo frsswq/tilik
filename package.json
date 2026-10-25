@@ -10,6 +10,7 @@
     "db:migrate": "wrangler d1 migrations apply DB --remote",
     "db:migrate:local": "wrangler d1 migrations apply DB --local",
     "deploy": "bun run build && bun run db:migrate && wrangler deploy",
+    "deploy:redirect": "wrangler deploy --config wrangler.redirect.jsonc",
     "dev": "react-router dev",
     "fix": "ultracite fix",
     "import:ipip-16pf": "bun run scripts/import-ipip-16pf.ts",

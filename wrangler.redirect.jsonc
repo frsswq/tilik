@@ -1,0 +1,9 @@
+// Deployment for the old-host redirect only. The site itself deploys from
+// `wrangler.jsonc`, because a Worker can serve assets from one config only.
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "tilik-redirect",
+  "main": "./worker/redirect.ts",
+  "compatibility_date": "2026-10-11",
+  "routes": [{ "pattern": "test.farissaifuddin.com", "custom_domain": true }],
+}
