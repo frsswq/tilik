@@ -3,7 +3,7 @@
 Status: active.
 Owner: Faris Saifuddin.
 
-This document records the visual direction for `personality-test`.
+This document records the visual direction for Tilik.
 It holds the reference set and the rules that follow from it.
 
 ## Light mode only
@@ -49,7 +49,7 @@ The other three are listed from the chosen set and still need a reading pass bef
 
 The selected direction is the centered product-window collage in plum.
 The headline is "Meet yourself. Again."
-The header and footer use the Temu mark, with matching browser and touch icons.
+The header and footer use the Tilik mark, with matching browser and touch icons.
 Two opposing profiles use positive and negative space to suggest recognition through another perspective.
 The production geometry lives in `app/components/site-logo.tsx` and `public/favicon.svg`.
 Use these files as the reference for the selected mark.

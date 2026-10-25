@@ -13,7 +13,7 @@ export const SiteFooter = () => (
       <div className="site-footer-brand">
         <Link className="site-brand" to="/">
           <SiteLogo />
-          <span>personality-test</span>
+          <span>Tilik</span>
         </Link>
         <p className="site-footer-note">
           Free, open tests, scored on your device. Nothing you answer is sent

@@ -27,11 +27,11 @@ export const meta = ({ params }: Route.MetaArgs) => {
   const instrument = params.slug ? findInstrument(params.slug) : undefined;
 
   if (!instrument) {
-    return [{ title: "Test not found" }];
+    return [{ title: "Test not found - Tilik" }];
   }
 
   return [
-    { title: `${instrument.title} - personality-test` },
+    { title: `${instrument.title} - Tilik` },
     { content: instrument.description, name: "description" },
   ];
 };

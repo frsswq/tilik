@@ -50,7 +50,7 @@ import {
 import { useStoredResult, useStoredUpload } from "~/lib/use-stored-result";
 import { useTestSession } from "~/lib/use-test-session";
 
-export const meta = () => [{ title: "Your result" }];
+export const meta = () => [{ title: "Your result - Tilik" }];
 
 interface SharedResult {
   code: string;

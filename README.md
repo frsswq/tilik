@@ -1,4 +1,4 @@
-# personality-test
+# Tilik
 
 Free online psychological tests that use open, public-domain question sets.
 

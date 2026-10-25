@@ -1,5 +1,5 @@
 /**
- * The Temu mark: two opposing profiles formed by positive and negative space.
+ * The Tilik mark: two opposing profiles formed by positive and negative space.
  *
  * The mark sits on a 100 unit grid, the same grid as the favicon, and it fills
  * with `currentColor`, so the stylesheet owns the colour.

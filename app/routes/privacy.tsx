@@ -1,7 +1,7 @@
 import { Link } from "react-router";
 
 export const meta = () => [
-  { title: "Privacy - personality-test" },
+  { title: "Privacy - Tilik" },
   {
     content:
       "No account or email. Answers stay in your browser. Completed scores are stored for up to 90 days under a private code.",

@@ -25,12 +25,12 @@ export const Layout = ({ children }: { children: React.ReactNode }) => (
           a server. A crawler therefore cannot read a single result. See the
           privacy page.
         */}
-      <meta content="Meet yourself, again" property="og:title" />
+      <meta content="Tilik - Meet yourself, again" property="og:title" />
       <meta
         content="Open item sets, scored in your browser. No account, and no answer leaves your device."
         property="og:description"
       />
-      <meta content="personality-test" property="og:site_name" />
+      <meta content="Tilik" property="og:site_name" />
       <meta content="website" property="og:type" />
       <meta content="summary" name="twitter:card" />
       {/*

@@ -19,11 +19,11 @@ export const meta = ({ params }: Route.MetaArgs) => {
   const instrument = params.slug ? findInstrument(params.slug) : undefined;
 
   if (!instrument) {
-    return [{ title: "Test not found" }];
+    return [{ title: "Test not found - Tilik" }];
   }
 
   return [
-    { title: `Methodology: ${instrument.title}` },
+    { title: `Methodology: ${instrument.title} - Tilik` },
     {
       content: `Every item, the scoring direction, and the references for the ${instrument.title}.`,
       name: "description",

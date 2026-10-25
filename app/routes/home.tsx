@@ -17,7 +17,7 @@ import { parseResultFile } from "~/lib/result-file";
 import { decodeShare } from "~/lib/share";
 
 export const meta = () => [
-  { title: "Meet yourself, again - free, open psychological tests" },
+  { title: "Tilik - free, open psychological tests" },
   {
     content:
       "Free, open psychological tests, scored in your browser. No account, and no answer leaves your device.",

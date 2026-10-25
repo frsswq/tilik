@@ -12,7 +12,7 @@ import { findInstrument } from "~/lib/instruments/registry";
 import type { Instrument, AnswerValue } from "~/lib/instruments/schema";
 import { useTestSession } from "~/lib/use-test-session";
 
-export const meta = () => [{ title: "Take a test" }];
+export const meta = () => [{ title: "Take a test - Tilik" }];
 
 /** Ten items per page keeps the page short without hiding the scale. */
 const PAGE_SIZE = 10;

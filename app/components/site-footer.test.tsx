@@ -5,6 +5,15 @@ import { SiteFooter } from "~/components/site-footer";
 import { renderRoute } from "~/test/render-route";
 
 describe(SiteFooter, () => {
+  it("shows the Tilik home link", () => {
+    renderRoute(<SiteFooter />);
+
+    expect(screen.getByRole("link", { name: "Tilik" })).toHaveAttribute(
+      "href",
+      "/"
+    );
+  });
+
   it("links to the legal pages and the test list", () => {
     renderRoute(<SiteFooter />);
 

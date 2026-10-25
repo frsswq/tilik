@@ -3,7 +3,7 @@ import { Link } from "react-router";
 import { instruments } from "~/lib/instruments/registry";
 
 export const meta = () => [
-  { title: "Methodology - personality-test" },
+  { title: "Methodology - Tilik" },
   {
     content:
       "How this site scores a test, why it reports no percentiles, and how an instrument enters the site.",

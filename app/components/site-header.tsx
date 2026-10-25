@@ -10,7 +10,7 @@ export const SiteHeader = () => (
     <div className="site-header-inner">
       <Link className="site-brand" to="/">
         <SiteLogo />
-        <span>personality-test</span>
+        <span>Tilik</span>
       </Link>
       <nav aria-label="Main">
         <Link
